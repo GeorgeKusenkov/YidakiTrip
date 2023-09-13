@@ -1,8 +1,9 @@
 package com.example.yidakitrip.model
 
+import com.example.yidakitrip.items.LessonElement
+
 data class Lesson(
-    val id: String,
-    val title: Int,
-    val description: Int,
-    var image: Int
+    val isFirstLesson: Boolean = false,
+    val isLastLesson: Boolean = false,
+    val lessonContent: List<LessonContent>
 )
