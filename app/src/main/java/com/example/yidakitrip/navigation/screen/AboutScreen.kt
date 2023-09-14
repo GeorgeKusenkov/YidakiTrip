@@ -1,14 +1,13 @@
-package com.example.yidakitrip.navigation.bottomNavigation
+package com.example.yidakitrip.navigation.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-
 @Composable
-fun PracticeScreen() {
+fun AboutScreen() {
     Column(modifier = Modifier.fillMaxSize()) {
-        Text(text = "PracticeScreen")
+        Text(text = "AboutScreen")
     }
 }

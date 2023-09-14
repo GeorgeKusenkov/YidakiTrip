@@ -1,4 +1,4 @@
-package com.example.yidakitrip.navigation
+package com.example.yidakitrip.navigation.screen
 
 import android.util.Log
 import androidx.compose.foundation.layout.Column
@@ -14,13 +14,11 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import com.example.yidakitrip.items.LessonImage
 import com.example.yidakitrip.items.LessonElement
 import com.example.yidakitrip.items.characters.CharacterLukaItem
 import com.example.yidakitrip.items.characters.CharacterVaruItem
 import com.example.yidakitrip.model.Lesson
-import com.example.yidakitrip.model.LessonContent
 import com.example.yidakitrip.repository.lesson.LessonRepository
 
 @Composable

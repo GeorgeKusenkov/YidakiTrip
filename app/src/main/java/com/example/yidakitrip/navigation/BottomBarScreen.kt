@@ -1,4 +1,4 @@
-package com.example.yidakitrip.navigation.bottomNavigation
+package com.example.yidakitrip.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Face
@@ -13,7 +13,7 @@ sealed class BottomBarScreen(
     val icon: ImageVector
 ) {
     object Study: BottomBarScreen(
-        route = "study",
+        route = "study_screen",
         title = "Обучение",
         icon = Icons.Default.Home
     )
@@ -32,7 +32,7 @@ sealed class BottomBarScreen(
 
     object About: BottomBarScreen(
         route = "about",
-        title = "Обучение",
+        title = "О нас",
         icon = Icons.Default.Face
     )
 }

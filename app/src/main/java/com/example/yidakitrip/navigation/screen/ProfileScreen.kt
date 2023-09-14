@@ -1,4 +1,4 @@
-package com.example.yidakitrip.navigation.bottomNavigation
+package com.example.yidakitrip.navigation.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

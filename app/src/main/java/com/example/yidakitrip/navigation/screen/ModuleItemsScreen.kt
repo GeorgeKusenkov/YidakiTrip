@@ -1,13 +1,10 @@
-package com.example.yidakitrip.navigation
+package com.example.yidakitrip.navigation.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material3.Button
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -16,6 +13,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.yidakitrip.items.ModuleItem
 import com.example.yidakitrip.model.ModuleItemList
+import com.example.yidakitrip.navigation.graph.DetailsScreen
 import com.example.yidakitrip.repository.module.ModulesRepository
 
 @Composable
@@ -41,7 +39,7 @@ fun ModuleItemsScreen(
 //                 ModuleItem(module) { toDetail(navController = navController, module = module) }
                 ModuleItem(module, onClick = {
                     navController.navigate(
-                        route = Screen.Module.passId(
+                        route = DetailsScreen.Module.passId(
                             id = 1,
                             name = "${index+1}"
                         )
@@ -74,7 +72,7 @@ private fun toDetail(
     moduleItemList: ModuleItemList
 ) {
     navController.navigate(
-        route = Screen.Module.passId(
+        route = DetailsScreen.Module.passId(
             id = 1,
             name = moduleItemList.id
         )
