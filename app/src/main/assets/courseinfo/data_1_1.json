@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Урок 1 Модуль 1 Курс 1",
+    "description": "Описание 1",
+    "image": "imag_c1m1"
+  },
+  {
+    "id": 2,
+    "title": "Урок 2 Модуль 1 Курс 1",
+    "description": "Описание 2",
+    "image": "imag_c1m1"
+  },
+  {
+    "id": 3,
+    "title": "Урок 3 Модуль 1 Курс 1",
+    "description": "Описание 3",
+    "image": "imag_c1m1"
+  },
+  {
+    "id": 4,
+    "title": "Урок 4 Модуль 1 Курс 1",
+    "description": "Описание 4",
+    "image": "imag_c1m1"
+  },
+  {
+    "id": 5,
+    "title": "Урок 5 Модуль 1 Курс 1",
+    "description": "Описание 5",
+    "image": "imag_c1m1"
+  }
+]
