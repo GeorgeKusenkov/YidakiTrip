@@ -7,6 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.yidakitrip.presentation.navigation.graph.RootNavGraph
 import com.example.yidakitrip.presentation.theme.YidakiTripTheme
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,3 +18,5 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+

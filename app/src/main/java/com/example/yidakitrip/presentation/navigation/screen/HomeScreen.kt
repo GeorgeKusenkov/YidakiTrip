@@ -27,6 +27,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavDestination
@@ -36,18 +37,38 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.yidakitrip.presentation.navigation.BottomBarScreen
+import com.example.yidakitrip.presentation.navigation.MainViewModelFactory
 import com.example.yidakitrip.presentation.navigation.graph.HomeNavGraph
+import com.example.yidakitrip.presentation.navigation.screen.moduleItems.DataType
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
     navController: NavHostController = rememberNavController(),
-    mainViewModel: MainViewModel = viewModel()
 ) {
+    val context = LocalContext.current
+    val mainViewModel: MainViewModel = viewModel(
+        factory = MainViewModelFactory(context)
+    )
+
+    val roomViewModel: RoomViewModel = viewModel(factory = RoomViewModel.factory)
+
     val title: String by mainViewModel.screenTitle.observeAsState("Home")
+
+
     val currentBackStackEntry by navController.currentBackStackEntryAsState()
     val destination = currentBackStackEntry?.destination?.route.toString()
+
+
+    //Получаем все данные
+//    mainViewModel.fetchContentData(id = "0", dataType = DataType.ALL)
+    mainViewModel.getAllFileNamesData(0, dataType = DataType.ALL)
+    val moduleNames by mainViewModel.allNameList.observeAsState(emptyList())
+    //Отправляем их в БД
+    roomViewModel.loadAllDataToRoom(moduleNames)
+    Log.d("12312312333", "moduleNames: ${moduleNames}")
+
 
     Scaffold(
         topBar = {

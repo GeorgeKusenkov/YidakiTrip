@@ -9,7 +9,6 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import com.example.yidakitrip.presentation.navigation.screen.MainViewModel
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ProfileScreen(mainViewModel: MainViewModel) {
         LaunchedEffect(Unit){

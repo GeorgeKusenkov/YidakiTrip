@@ -28,5 +28,35 @@
     "title": "Урок 5 Модуль 2 Курс 1",
     "description": "Описание 5",
     "image": "imag_c1m1"
+  },
+  {
+    "id": 6,
+    "title": "Урок 6 Модуль 2 Курс 1",
+    "description": "Описание 6",
+    "image": "imag_c1m1"
+  },
+  {
+    "id": 7,
+    "title": "Урок 7 Модуль 2 Курс 1",
+    "description": "Описание 6",
+    "image": "imag_c1m1"
+  },
+  {
+    "id": 8,
+    "title": "Урок 8 Модуль 2 Курс 1",
+    "description": "Описание 6",
+    "image": "imag_c1m1"
+  },
+  {
+    "id": 9,
+    "title": "Урок 9 Модуль 2 Курс 1",
+    "description": "Описание 6",
+    "image": "imag_c1m1"
+  },
+  {
+    "id": 10,
+    "title": "Урок 10 Модуль 2 Курс 1",
+    "description": "Описание 6",
+    "image": "imag_c1m1"
   }
 ]

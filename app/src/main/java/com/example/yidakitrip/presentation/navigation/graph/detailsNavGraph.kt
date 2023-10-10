@@ -7,9 +7,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import androidx.navigation.navigation
 import com.example.yidakitrip.presentation.navigation.DetailsScreen
-import com.example.yidakitrip.presentation.navigation.screen.LessonDetailedScreen
-import com.example.yidakitrip.presentation.navigation.screen.LessonItemsScreen
-import com.example.yidakitrip.presentation.navigation.screen.ModuleItemsScreen
+import com.example.yidakitrip.presentation.navigation.screen.lessonDetailed.LessonDetailedScreen
+import com.example.yidakitrip.presentation.navigation.screen.lessonItems.LessonItemsScreen
+import com.example.yidakitrip.presentation.navigation.screen.moduleItems.ModuleItemsScreen
 import com.example.yidakitrip.presentation.navigation.graph.Ars.COURSE_ARGUMENT_KEY
 import com.example.yidakitrip.presentation.navigation.graph.Ars.COURSE_ARGUMENT_KEY2
 import com.example.yidakitrip.presentation.navigation.graph.Ars.LESSON_ARGUMENT_KEY

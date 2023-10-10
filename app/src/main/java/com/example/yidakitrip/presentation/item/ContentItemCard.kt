@@ -10,16 +10,21 @@ import com.example.yidakitrip.Utils
 import com.example.yidakitrip.data.model.ItemContent
 
 @Composable
-fun ModuleItem(moduleItemList: ItemContent, contentOnClick:(ItemContent) -> Unit) {
+fun ContentItemCard(
+    contentItemList: ItemContent,
+    contentItemSize: Int,
+    passedProgress: Int,
+    rating: Int,
+    contentOnClick:(ItemContent) -> Unit) {
     Surface(modifier = Modifier.padding(12.dp, 8.dp)) {
         BasicItem(
-            imagePainter = painterResource(id = Utils.getResourceIdByName(moduleItemList.image)),
-            title = moduleItemList.title,
-            description = moduleItemList.description,
-            allProgress = 5,
-            passedProgress = 5,
-            lessonRating = 3,
-            itemContent = moduleItemList,
+            imagePainter = painterResource(id = Utils.getResourceIdByName(contentItemList.image)),
+            title = contentItemList.title,
+            description = contentItemList.description,
+            allProgress = contentItemSize,
+            passedProgress = passedProgress,
+            lessonRating = rating,
+            itemContent = contentItemList,
             contentOnClick = contentOnClick
         )
     }

@@ -10,23 +10,5 @@
     "title": "Модуль 2",
     "description": "Описание 2",
     "image": "imag_c1m1"
-  },
-  {
-    "id": 3,
-    "title": "Модуль 3",
-    "description": "Описание 3",
-    "image": "imag_c1m1"
-  },
-  {
-    "id": 4,
-    "title": "Модуль 4",
-    "description": "Описание 4",
-    "image": "imag_c1m1"
-  },
-  {
-    "id": 5,
-    "title": "Модуль 5",
-    "description": "Описание 5",
-    "image": "imag_c1m1"
   }
 ]
